@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa Senhora da Conceição - Quatiguaba | Paróquia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans-body antialiased">
+
+    <header class="sticky top-0 z-50 bg-white header-shadow">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="#home" class="flex items-center space-x-2 text-xl font-serif-title text-gray-800 hover:text-blue-900 transition duration-300">
+                    <img src="/images/logo.png" alt="Logo Paróquia" class="logo">
+                    <span>Imaculada Conceição</span>
+                </a>
+                
+                <div class="hidden md:flex space-x-6">
+                    <a href="#home" class="text-gray-600 hover:text-blue-800 transition duration-150 py-5 gold-border">Início</a>
+                    <a href="#sobre" class="text-gray-600 hover:text-blue-800 transition duration-150 py-5">Sobre</a>
+                    <a href="#horarios" class="text-gray-600 hover:text-blue-800 transition duration-150 py-5">Horários</a>
+                    <a href="#pastorais" class="text-gray-600 hover:text-blue-800 transition duration-150 py-5">Pastorais</a>
+                    <a href="#eventos" class="text-gray-600 hover:text-blue-800 transition duration-150 py-5">Eventos</a>
+                    <a href="#doacoes" class="text-gray-600 hover:text-blue-800 transition duration-150 py-5">Doações</a>
+                    <a href="#contato" class="text-gray-600 hover:text-blue-800 transition duration-150 py-5">Contato</a>
+                </div>
+                
+                <a href="#doacoes" class="hidden md:block px-4 py-2 rounded-full bg-yellow-600 text-white hover:bg-yellow-700 transition duration-300 font-semibold shadow-md">
+                    Faça sua Doação
+                </a>
+
+                <button id="menu-btn" class="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-lg absolute w-full">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-blue-50">Início</a>
+                <a href="#sobre" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-blue-50">Sobre a Paróquia</a>
+                <a href="#horarios" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-blue-50">Horários e Missas</a>
+                <a href="#pastorais" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-blue-50">Pastorais</a>
+                <a href="#eventos" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-blue-50">Notícias e Eventos</a>
+                <a href="#doacoes" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-blue-50">Doações</a>
+                <a href="#contato" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-blue-50">Contato</a>
+                <a href="#doacoes" class="block text-center mt-2 px-4 py-2 rounded-full bg-yellow-600 text-white hover:bg-yellow-700 font-semibold">Faça sua Doação</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="pb-16 relative overflow-hidden bg-sky-50/50">
+            <div class="relative h-[60vh] md:h-[80vh] flex items-center justify-center text-center p-4">
+                
+                <div id="hero-slider" class="absolute inset-0 overflow-hidden">
+                    <div class="slide absolute inset-0 bg-cover bg-center opacity-0" 
+                        style="background-image: url('/images/igreja.jpg')">
+                    </div>
+                    <div class="slide absolute inset-0 bg-cover bg-center opacity-0" 
+                        style="background-image: url('/images/igreja2.jpg');"></div>
+                    <div class="slide absolute inset-0 bg-cover bg-center opacity-0" 
+                        style="background-image: url('https://placehold.co/1920x800/059669/ffffff?text=Comunidade+em+Celebra%C3%A7%C3%A3o');"></div>
+                    
+                    <div class="absolute inset-0 bg-black/40"></div> </div>
+
+                <div class="relative z-10 max-w-4xl">
+                    <h1 class="font-serif-title text-5xl md:text-7xl font-bold text-white mb-4 leading-tight drop-shadow-lg">
+                        <span class="text-yellow-400">Igreja Imaculada Conceição de Quatiguaba</span>
+                    </h1>
+                    <p class="font-serif-title text-xl md:text-2xl text-white mb-4 font-light drop-shadow-lg">
+                        Um lar de fé, esperança e caridade.
+                    </p>
+                    <div class="space-x-4">
+                        <a href="#horarios" class="inline-block px-8 py-3 bg-yellow-600 text-white text-lg font-semibold rounded-full hover:bg-yellow-700 transition duration-300 shadow-xl transform hover:scale-105">
+                            Horários das Missas
+                        </a>
+                        <a href="#sobre" class="inline-block px-8 py-3 bg-white text-yellow-700 text-lg font-semibold rounded-full hover:bg-gray-100 transition duration-300 shadow-xl transform hover:scale-105">
+                            Saiba Mais
+                        </a>
+                    </div>
+                </div>
+
+                <div id="slider-dots" class="relative z-20 mt-16 flex justify-center space-x-2 absolute bottom-4 left-0 right-0">
+                    <span class="dot w-3 h-3 bg-white/50 rounded-full cursor-pointer hover:bg-white transition-all duration-300" data-index="0"></span>
+                    <span class="dot w-3 h-3 bg-white/50 rounded-full cursor-pointer hover:bg-white transition-all duration-300" data-index="1"></span>
+                    <span class="dot w-3 h-3 bg-white/50 rounded-full cursor-pointer hover:bg-white transition-all duration-300" data-index="2"></span>
+                </div>
+            </div>
+
+            <div class="max-w-7xl mx-auto -mt-16 relative z-30 px-4">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                        <h3 class="text-2xl font-serif-title font-bold text-blue-800 mb-2">Festa da Padroeira</h3>
+                        <p class="text-gray-600">Prepare-se para nossa Grande Festa Paroquial. Novenas, Quermesse e muita alegria! **De 29/Nov a 08/Dez**.</p>
+                        <a href="#eventos" class="mt-3 block text-yellow-600 font-semibold hover:text-yellow-700">Ver Programação &rarr;</a>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                        <h3 class="text-2xl font-serif-title font-bold text-blue-800 mb-2">Campanha da Caridade</h3>
+                        <p class="text-gray-600">Arrecadação de alimentos não perecíveis para as famílias assistidas pela Pastoral Social. Sua ajuda é fundamental.</p>
+                        <a href="#doacoes" class="mt-3 block text-yellow-600 font-semibold hover:text-yellow-700">Como Participar &rarr;</a>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                        <h3 class="text-2xl font-serif-title font-bold text-blue-800 mb-2">Inscrições Catequese</h3>
+                        <p class="text-gray-600">As matrículas para a Catequese Infantil e de Crisma estão abertas. Traga seu filho para o caminho da fé.</p>
+                        <a href="#pastorais" class="mt-3 block text-yellow-600 font-semibold hover:text-yellow-700">Inscreva-se Agora &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
+                <div class="bg-white rounded-xl shadow-2xl p-8 md:p-12 flex flex-col md:flex-row items-center">
+                    <div class="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden mb-6 md:mb-0 md:mr-10 flex-shrink-0 border-4 border-yellow-600 shadow-md">
+                        <img src="https://placehold.co/150x150/fca311/ffffff?text=P%C3%A1roco" alt="" class="object-cover w-full h-full">
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-serif-title font-extrabold text-blue-800 mb-3">
+                            Uma Palavra do Nosso Pároco
+                        </h2>
+                        <p class="text-lg text-gray-700 italic mb-4">
+                            "Alegrai-vos sempre no Senhor! Esta é a nossa casa, um refúgio onde a fé nos une e a caridade nos move. Que a Virgem da Conceição nos guie e ilumine a todos. Sintam-se acolhidos!(Gerado automaticamente)"
+                        </p>
+                        <p class="text-right font-semibold text-blue-800">
+                            Pe. José da Fé <br><span class="text-sm font-normal text-gray-500">Pároco de Quatiguaba</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="py-16 md:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-serif-title font-extrabold text-center text-blue-800 mb-12 gold-border w-fit mx-auto pb-2">
+                    Sobre a Nossa Comunidade
+                </h2>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                    <div class="p-6 bg-gray-50 rounded-lg shadow-inner">
+                        <h3 class="text-3xl font-serif-title font-bold text-yellow-700 mb-3 flex items-center">
+                            <span class="mr-2 text-3xl">&#9818;</span> Nossa História
+                        </h3>
+                        <p class="text-gray-700 mb-4">
+                            (gerado automaticamente)A Paróquia Nossa Senhora da Conceição de Quatiguaba tem suas raízes fincadas na fé dos pioneiros. Fundada oficialmente em 1950, a atual igreja matriz, com sua arquitetura imponente e vitrais coloridos, foi erguida pelo esforço e dedicação de toda a comunidade. É um testemunho vivo da devoção mariana e do crescimento da fé na região, atravessando gerações de famílias.
+                        </p>
+                        <a href="#" class="text-blue-600 font-semibold hover:text-blue-800">Ver linha do tempo completa</a>
+                    </div>
+
+                    <div class="p-6 bg-gray-50 rounded-lg shadow-inner">
+                        <h3 class="text-3xl font-serif-title font-bold text-yellow-700 mb-3 flex items-center">
+                            <span class="mr-2 text-3xl">&#9932;</span> Padres e Equipe
+                        </h3>
+                        <p class="text-gray-700 mb-4">
+                            (gerado automaticamente)Somos guiados pelo nosso Pastor, Pe. José da Fé, que serve a comunidade com zelo e alegria. Ele é auxiliado por uma equipe pastoral dedicada, composta por secretárias, ministros da Eucaristia, coordenadores e leigos engajados, todos unidos na missão de evangelizar.
+                        </p>
+                        <ul class="list-disc list-inside text-gray-700 ml-4">
+                            <li>Pe. José da Fé (Pároco)</li>
+                            <li>Maria Auxiliadora (Secretaria Paroquial)</li>
+                            <li>João Batista (Coordenador Pastoral)</li>
+                        </ul>
+                        <a href="#" class="mt-3 block text-blue-600 font-semibold hover:text-blue-800">Conheça a Equipe &rarr;</a>
+                    </div>
+
+                    <div class="p-6 bg-gray-50 rounded-lg shadow-inner">
+                        <h3 class="text-3xl font-serif-title font-bold text-yellow-700 mb-3 flex items-center">
+                            <span class="mr-2 text-3xl">&#10013;</span> Nossa Fé
+                        </h3>
+                        <p class="text-gray-700 mb-4">
+                            (gerado automaticamente)Acreditamos no Amor de Deus revelado em Jesus Cristo e na intercessão de Nossa Senhora da Conceição, Imaculada. Nossos valores são pautados na Palavra, na vivência dos Sacramentos, na caridade fraterna e na construção de um Reino de justiça e paz em nossa cidade. A Igreja é nossa mãe e mestra, e a Eucaristia é o centro de nossa vida.
+                        </p>
+                        <a href="#" class="text-blue-600 font-semibold hover:text-blue-800">Valores e Doutrina</a>
+                    </div>
+                </div>
+
+                <div class="mt-16 bg-blue-50 p-8 rounded-xl shadow-lg border-t-4 border-blue-700">
+                    <h3 class="text-3xl font-serif-title font-bold text-blue-800 mb-6 text-center">
+                        Onde Nos Encontrar
+                    </h3>
+                    <div class="flex flex-col md:flex-row justify-around items-center space-y-6 md:space-y-0">
+                        <div class="text-center">
+                            <p class="text-xl font-semibold text-yellow-700 mb-2">Endereço</p>
+                            <p class="text-gray-700">Praça da Matriz, 123 - Centro<br>Quatiguaba, Estado-BR, CEP: 12345-678</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-xl font-semibold text-yellow-700 mb-2">Contato</p>
+                            <p class="text-gray-700">Telefone: (99) 9999-9999<br>E-mail: contato@paroquianossasenhora.org.br</p>
+                        </div>
+                    </div>
+                    <div class="mt-8 h-64 bg-gray-200 rounded-lg overflow-hidden border border-gray-300 flex items-center justify-center">
+                        <p class="text-gray-500 italic">https://maps.app.goo.gl/UqUAqCrzpXYiDfyx5</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="horarios" class="py-16 md:py-24 bg-sky-50/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-serif-title font-extrabold text-center text-blue-800 mb-12 gold-border w-fit mx-auto pb-2">
+                    Horários das Celebrações
+                </h2>
+
+                <div class="bg-white p-8 rounded-xl shadow-2xl mb-12">
+                    <h3 class="text-3xl font-serif-title font-bold text-yellow-700 mb-6 text-center">
+                        Missas na Matriz
+                    </h3>
+                    
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full divide-y divide-gray-200">
+                            <thead class="bg-blue-700">
+                                <tr>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider rounded-tl-lg">Dia</th>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider">Horário</th>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider rounded-tr-lg">Observação</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-200">
+                                <tr class="hover:bg-gray-50 transition duration-150">
+                                    <td class="px-6 py-4 whitespace-nowrap text-lg font-medium text-blue-800">Domingo</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-lg">07:00h | 10:00h | 19:00h</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Missa Solene da Comunidade</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50 transition duration-150">
+                                    <td class="px-6 py-4 whitespace-nowrap text-lg font-medium text-blue-800">Terça-feira</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-lg">19:30h</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Missa e Novena de N. Sra. do Perpétuo Socorro</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50 transition duration-150">
+                                    <td class="px-6 py-4 whitespace-nowrap text-lg font-medium text-blue-800">Quarta a Sábado</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-lg">18:30h</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Missa Diária</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="mt-4 text-sm text-gray-500 text-center">* Consulte o calendário para horários especiais em festividades.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-yellow-600">
+                        <h4 class="text-xl font-bold text-blue-800 mb-2">Batismos</h4>
+                        <p class="text-gray-600 mb-3">Reunião de pais e padrinhos todo 1º Sábado do mês. Agendamento na secretaria.</p>
+                        <a href="#contato" class="text-sm font-semibold text-yellow-600 hover:text-yellow-700">Ver Requisitos</a>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-yellow-600">
+                        <h4 class="text-xl font-bold text-blue-800 mb-2">Casamentos</h4>
+                        <p class="text-gray-600 mb-3">Agendar com antecedência de 6 meses a 1 ano na secretaria paroquial.</p>
+                        <a href="#contato" class="text-sm font-semibold text-yellow-600 hover:text-yellow-700">Informações</a>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-yellow-600">
+                        <h4 class="text-xl font-bold text-blue-800 mb-2">Confissões</h4>
+                        <p class="text-gray-600 mb-3">Disponibilidade do padre 30 min antes de cada missa e por agendamento.</p>
+                        <a href="#contato" class="text-sm font-semibold text-yellow-600 hover:text-yellow-700">Falar com o Padre</a>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-yellow-600">
+                        <h4 class="text-xl font-bold text-blue-800 mb-2">Adoração ao Santíssimo</h4>
+                        <p class="text-gray-600 mb-3">Toda quinta-feira, das 17:00h às 18:30h. Venha rezar!</p>
+                        <a href="#eventos" class="text-sm font-semibold text-yellow-600 hover:text-yellow-700">Mais Orações</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pastorais" class="py-16 md:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-serif-title font-extrabold text-center text-blue-800 mb-12 gold-border w-fit mx-auto pb-2">
+                    Pastorais e Movimentos
+                </h2>
+
+                <p class="text-center text-lg text-gray-700 mb-10 max-w-3xl mx-auto">
+                    A vida da nossa paróquia se move através da dedicação de muitos. Conheça e encontre seu lugar de serviço em nossa comunidade!
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-md flex flex-col items-center text-center hover:bg-sky-50 transition duration-300">
+                        <span class="text-4xl text-yellow-600 mb-3">📚</span>
+                        <h4 class="text-2xl font-serif-title font-bold text-blue-800 mb-2">Catequese</h4>
+                        <p class="text-gray-600 mb-4">Formação de fé para crianças, jovens e adultos, preparando para os sacramentos da Iniciação à Vida Cristã.</p>
+                        <a href="#" class="mt-auto px-4 py-2 bg-blue-700 text-white rounded-full text-sm hover:bg-blue-800">Detalhes & Participação</a>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-md flex flex-col items-center text-center hover:bg-sky-50 transition duration-300">
+                        <span class="text-4xl text-yellow-600 mb-3">🤲</span>
+                        <h4 class="text-2xl font-serif-title font-bold text-blue-800 mb-2">Terço dos Homens</h4>
+                        <p class="text-gray-600 mb-4">Grupo de oração e adoração formado pelos homens da comunidade</p>
+                        <a href="#" class="mt-auto px-4 py-2 bg-blue-700 text-white rounded-full text-sm hover:bg-blue-800">Detalhes & Participação</a>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-md flex flex-col items-center text-center hover:bg-sky-50 transition duration-300">
+                        <span class="text-4xl text-yellow-600 mb-3">📿</span>
+                        <h4 class="text-2xl font-serif-title font-bold text-blue-800 mb-2">Apostolado da Oração</h4>
+                        <p class="text-gray-600 mb-4">Grupo de oração e adoração em união com o Santo Padre, promovendo a devoção ao Sagrado Coração de Jesus.</p>
+                        <a href="#" class="mt-auto px-4 py-2 bg-blue-700 text-white rounded-full text-sm hover:bg-blue-800">Detalhes & Participação</a>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-md flex flex-col items-center text-center hover:bg-sky-50 transition duration-300">
+                        <span class="text-4xl text-yellow-600 mb-3">🎶</span>
+                        <h4 class="text-2xl font-serif-title font-bold text-blue-800 mb-2">Ministério de Música</h4>
+                        <p class="text-gray-600 mb-4">Animando as celebrações litúrgicas e levando a mensagem de Deus através do canto e da música sacra.</p>
+                        <a href="#" class="mt-auto px-4 py-2 bg-blue-700 text-white rounded-full text-sm hover:bg-blue-800">Detalhes & Participação</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="eventos" class="py-16 md:py-24 bg-sky-50/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-serif-title font-extrabold text-center text-blue-800 mb-12 gold-border w-fit mx-auto pb-2">
+                    Notícias e Calendário
+                </h2>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+                    <div class="lg:col-span-2 space-y-8">
+                        <h3 class="text-3xl font-serif-title font-bold text-yellow-700 mb-4">Últimas Publicações</h3>
+
+                        <article class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-blue-600 hover:shadow-xl transition duration-300">
+                            <p class="text-sm text-gray-500 mb-1">05 de Novembro de 2025</p>
+                            <h4 class="text-2xl font-bold text-blue-800 mb-2 hover:text-blue-900 cursor-pointer">
+                                Peregrinação a Aparecida é Sucesso de Fé
+                            </h4>
+                            <p class="text-gray-700 line-clamp-2">
+                                Mais de 50 paroquianos de Quatiguaba viajaram no último final de semana para o Santuário Nacional de Nossa Senhora Aparecida. O momento foi de intensa oração e devoção, fortalecendo os laços comunitários. Veja a galeria de fotos!
+                            </p>
+                            <a href="#galeria" class="mt-2 inline-block text-sm font-semibold text-yellow-600 hover:text-yellow-700">Leia na íntegra &rarr;</a>
+                        </article>
+                        
+                        <article class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-blue-600 hover:shadow-xl transition duration-300">
+                            <p class="text-sm text-gray-500 mb-1">28 de Outubro de 2025</p>
+                            <h4 class="text-2xl font-bold text-blue-800 mb-2 hover:text-blue-900 cursor-pointer">
+                                Encontro de Jovens: "Viver a Vocação em Cristo"
+                            </h4>
+                            <p class="text-gray-700 line-clamp-2">
+                                Nosso grupo de jovens realizou um retiro inspirador, focado na descoberta e acolhimento dos dons. A programação contou com momentos de partilha, louvor e formação. Junte-se a nós!
+                            </p>
+                            <a href="#" class="mt-2 inline-block text-sm font-semibold text-yellow-600 hover:text-yellow-700">Leia na íntegra &rarr;</a>
+                        </article>
+
+                    </div>
+
+                    <div class="lg:col-span-1">
+                        <div class="bg-white p-6 rounded-xl shadow-2xl sticky top-24">
+                            <h3 class="text-3xl font-serif-title font-bold text-blue-800 mb-4">Próximos Eventos</h3>
+                            <p class="text-sm text-gray-500 mb-4">Integração com Google Calendar aqui.</p>
+                            
+                            <ul class="space-y-4">
+                                <li class="border-l-4 border-yellow-600 pl-4 py-2 hover:bg-gray-50 rounded-r-md transition duration-150">
+                                    <p class="text-xs font-semibold text-gray-500">SEX | 15 NOV | 19:30h</p>
+                                    <p class="font-bold text-gray-800">Terço dos Homens</p>
+                                    <p class="text-sm text-gray-600">Local: Salão Paroquial</p>
+                                </li>
+                                <li class="border-l-4 border-yellow-600 pl-4 py-2 hover:bg-gray-50 rounded-r-md transition duration-150">
+                                    <p class="text-xs font-semibold text-gray-500">SAB | 16 NOV | 16:00h</p>
+                                    <p class="font-bold text-gray-800">Reunião Pastoral Familiar</p>
+                                    <p class="text-sm text-gray-600">Local: Casa de Retiro</p>
+                                </li>
+                                <li class="border-l-4 border-yellow-600 pl-4 py-2 hover:bg-gray-50 rounded-r-md transition duration-150">
+                                    <p class="text-xs font-semibold text-gray-500">DOM | 17 NOV | 10:00h</p>
+                                    <p class="font-bold text-gray-800">Missa com Crianças</p>
+                                    <p class="text-sm text-gray-600">Local: Matriz</p>
+                                </li>
+                            </ul>
+                            <a href="#" class="mt-4 block text-center px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300">
+                                Ver Calendário Completo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="py-16 md:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-serif-title font-extrabold text-center text-blue-800 mb-12 gold-border w-fit mx-auto pb-2">
+                    Galeria de Fé e Comunhão
+                </h2>
+                <p class="text-center text-lg text-gray-700 mb-10 max-w-3xl mx-auto">
+                    Relembre momentos especiais de nossas celebrações, festas e encontros fraternos.
+                </p>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="aspect-video overflow-hidden rounded-lg shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition duration-300 cursor-pointer">
+                        <img src="https://placehold.co/600x400/1d4ed8/ffffff?text=Celebra%C3%A7%C3%A3o" alt="" class="w-full h-full object-cover">
+                    </div>
+                    <div class="aspect-video overflow-hidden rounded-lg shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition duration-300 cursor-pointer">
+                        <img src="https://placehold.co/600x400/065f46/ffffff?text=Comunidade+em+Festa" alt="" class="w-full h-full object-cover">
+                    </div>
+                    <div class="aspect-video overflow-hidden rounded-lg shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition duration-300 cursor-pointer">
+                        <img src="https://placehold.co/600x400/9d174d/ffffff?text=Detalhe+do+Altar" alt="" class="w-full h-full object-cover">
+                    </div>
+                    <div class="aspect-video overflow-hidden rounded-lg shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition duration-300 cursor-pointer">
+                        <img src="https://placehold.co/600x400/f59e0b/ffffff?text=Vitral" alt="" class="w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <div class="text-center mt-10">
+                    <a href="#" class="inline-block px-8 py-3 bg-blue-700 text-white text-lg font-semibold rounded-full hover:bg-blue-800 transition duration-300 shadow-lg">
+                        Ver Álbum Completo de Fotos
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="doacoes" class="py-16 md:py-24 bg-sky-50/50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-serif-title font-extrabold text-blue-800 mb-4">
+                    Sua Colaboração Constrói a Igreja
+                </h2>
+                <p class="text-xl text-gray-700 mb-10">
+                    Seja um benfeitor da Paróquia Nossa Senhora da Conceição. Toda ajuda é revertida para a manutenção da Matriz e para as obras de caridade.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-xl shadow-2xl border-t-4 border-yellow-600">
+                        <h3 class="text-3xl font-bold text-yellow-700 mb-4">Doação via PIX</h3>
+                        <p class="text-lg text-gray-800 mb-4 font-medium">Chave PIX (CNPJ da Paróquia)</p>
+                        <div class="bg-gray-100 p-4 rounded-lg border border-gray-300 mb-6">
+                            <code class="text-xl text-blue-800 font-mono select-all">99.999.999/0001-00</code>
+                        </div>
+                        <p class="text-sm text-gray-600 italic">Ao escanear o QR Code, verifique se o destinatário é "Igreja Imaculada Conceição Quatiguaba".</p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-xl shadow-2xl border-t-4 border-yellow-600">
+                        <h3 class="text-3xl font-bold text-yellow-700 mb-4">Depósito Bancário</h3>
+                        <p class="text-lg text-gray-800 mb-4">Informações para Transferência:</p>
+                        <ul class="text-left space-y-2 text-gray-700">
+                            <li class="font-medium">Banco: 000 - Banco Ficticio</li>
+                            <li class="font-medium">Agência: 1234</li>
+                            <li class="font-medium">Conta Corrente: 00000-0</li>
+                            <li class="font-medium">Favorecido: Igreja Imaculada Conceição Quatiguaba</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-12 bg-blue-700 p-6 rounded-xl text-white shadow-xl">
+                    <h4 class="text-2xl font-semibold mb-2">Área para o Dízimo</h4>
+                    <p class="text-lg mb-4">Contribua regularmente com seu Dízimo e ajude a sustentar a missão da Igreja.</p>
+                    <a href="#contato" class="inline-block px-6 py-2 bg-yellow-600 text-blue-900 font-bold rounded-full hover:bg-yellow-500 transition duration-300">
+                        Entrar em Contato para o Dízimo
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="py-16 md:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-serif-title font-extrabold text-center text-blue-800 mb-12 gold-border w-fit mx-auto pb-2">
+                    Fale Conosco
+                </h2>
+
+                <div class="max-w-3xl mx-auto bg-gray-50 p-8 md:p-10 rounded-xl shadow-2xl">
+                    <h3 class="text-2xl font-semibold text-blue-800 mb-6">Envie sua Mensagem ou Pedido de Oração</h3>
+                    
+                    <form onsubmit="event.preventDefault(); showContactMessage();" class="space-y-4">
+                        <div>
+                            <label for="nome" class="block text-sm font-medium text-gray-700">Nome Completo</label>
+                            <input type="text" id="nome" name="nome" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">E-mail</label>
+                            <input type="email" id="email" name="email" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label for="assunto" class="block text-sm font-medium text-gray-700">Assunto</label>
+                            <select id="assunto" name="assunto" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                                <option>Informações Gerais</option>
+                                <option>Agendamento de Sacramento</option>
+                                <option>Dízimo / Doações</option>
+                                <option>Pedido de Oração</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="mensagem" class="block text-sm font-medium text-gray-700">Mensagem / Intenção de Oração</label>
+                            <textarea id="mensagem" name="mensagem" rows="4" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"></textarea>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <button type="submit" class="px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-blue-800 hover:bg-blue-900 transition duration-300 transform hover:scale-105">
+                                Enviar Mensagem
+                            </button>
+                            <p id="contact-status" class="text-sm text-green-600 hidden font-semibold">Mensagem enviada com sucesso!</p>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="mt-12 text-center">
+                    <h3 class="text-2xl font-semibold text-blue-800 mb-4">Siga-nos nas Redes Sociais</h3>
+                    <div class="flex justify-center space-x-6">
+                        <a href="#" class="transition duration-800 transform hover:scale-105" aria-label="Facebook">
+                            <img src="/images/facebook.png" alt="Logo Paróquia" class="logo">                        </a>
+                        <a href="#" class="transition duration-800 transform hover:scale-105" aria-label="Instagram">
+                            <img src="/images/instagram.png" alt="Logo Paróquia" class="logo">
+                        </a>
+                        <a href="#" class="transition duration-800 transform hover:scale-105" aria-label="YouTube">
+                            <img src="/images/youtube.png" alt="Logo Paróquia" class="logo">                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-b border-gray-700 pb-8 mb-8">
+                <div>
+                    <h4 class="text-2xl font-serif-title font-bold text-yellow-500 mb-4">Quatiguaba</h4>
+                    <p class="text-gray-400 text-sm">Imaculada Conceição</p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 border-b border-gray-600 pb-2">Navegação</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#horarios" class="text-gray-400 hover:text-yellow-500 transition duration-150">Horários de Missa</a></li>
+                        <li><a href="#pastorais" class="text-gray-400 hover:text-yellow-500 transition duration-150">Pastorais</a></li>
+                        <li><a href="#doacoes" class="text-gray-400 hover:text-yellow-500 transition duration-150">Doações e Dízimo</a></li>
+                        <li><a href="#contato" class="text-gray-400 hover:text-yellow-500 transition duration-150">Fale Conosco</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 border-b border-gray-600 pb-2">Recursos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://www.diocesedetiangua.org/" class="text-gray-400 hover:text-yellow-500 transition duration-150">Site da Diocese</a></li>
+                        <li><a href="https://www.vaticannews.va/pt.html" class="text-gray-400 hover:text-yellow-500 transition duration-150">Vaticano News</a></li>
+                        <li>
+                            <a href="#" onclick="showPrayerRequest(); return false;" class="text-yellow-500 font-bold hover:text-yellow-400 transition duration-150 flex items-center">
+                                <span class="mr-1 text-xl">🙏</span> Pedido de Oração
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 border-b border-gray-600 pb-2">Legal e Ajuda</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-150">Política de Privacidade</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-150">Termos de Uso</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-150">Acessibilidade</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-center text-sm text-gray-500">
+                &copy; Developed by Fransoar. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+    
+    <div id="custom-modal" class="fixed inset-0 bg-gray-900 bg-opacity-75 hidden items-center justify-center z-[100]">
+        <div class="bg-white p-6 rounded-lg shadow-2xl max-w-sm w-full text-center">
+            <h3 id="modal-title" class="text-xl font-serif-title font-bold text-blue-800 mb-4">Atenção</h3>
+            <p id="modal-content" class="text-gray-700 mb-6">Esta é uma mensagem de teste.</p>
+            <button onclick="closeCustomModal()" class="px-6 py-2 bg-yellow-600 text-white rounded-full hover:bg-yellow-700 transition duration-300">Fechar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

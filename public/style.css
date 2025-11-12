@@ -1,0 +1,35 @@
+/* Paleta de Cores e Fontes Customizadas */
+:root {
+    --color-primary: #1e3a8a; /* Azul Marinho Sutil */
+    --color-accent: #d97706; /* Dourado Sutil */
+    --color-background: #f9fafb; /* Bege Claro */
+}
+.font-serif-title {
+    /* Playfair Display já foi carregado no <head> do HTML */
+    font-family: 'Playfair Display', serif;
+}
+.font-sans-body {
+    /* Inter já foi carregado no <head> do HTML */
+    font-family: 'Inter', sans-serif;
+}
+body {
+    background-color: var(--color-background);
+    color: #1f2937; /* Cor do texto padrão */
+}
+.header-shadow {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.gold-border {
+    border-bottom: 2px solid var(--color-accent);
+}
+/* Classe CSS para a transição dos slides */
+.slide {
+    transition: opacity 1.5s ease-in-out;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 40px;
+    object-fit: cover;
+    display: block;
+}
